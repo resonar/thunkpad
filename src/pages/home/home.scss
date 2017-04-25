@@ -1,0 +1,50 @@
+page-home {
+.bulb-icon{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.arrow-icon{
+    font-size: 24px;
+    padding: 5px;
+    color:#A1A1A1;
+}
+.bulb-label{
+    font-size: 16px;
+    padding: 0px;
+}
+
+ .range{
+     width:100px;
+      padding-top: 0;
+     padding-bottom: 0;
+ }
+
+.border{
+    border:red 1px solid;
+    //  padding-left: 0;
+    //  padding-right: 0;
+
+}
+.wrap{
+    width: 20px;
+    word-wrap: break-word;
+
+}
+.label{
+    margin-bottom: 0;
+}
+.avatar{
+    margin-right: 0;
+}
+.grid-list-item{
+    // border-top: 1px darkgray solid;
+    border-bottom: 1px darkgray solid;
+}
+.status{
+    color: #A1A1A1;
+
+}
+}

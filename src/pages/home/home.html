@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item ion-item *ngFor="let l of lights" class="">
+        <ion-avatar item-left (click)="onBulbPress(l.id)" >
+          <ion-icon [name]="l.status == 'on' ? 'ios-bulb' : 'ios-bulb-outline'" class="bulb-icon border"></ion-icon>
+        </ion-avatar>
+        <ion-row>
+          <ion-col col-6 col-sm-6 col-md-6 no-padding class="border">
+            <h1 class="bulb-label border">{{l.name}}</h1>
+            <p class="status">status:{{l.status}} level:{{l.level}}</p>
+          </ion-col>
+          <ion-col col-6 col-sm-6 col-md-6 no-padding class="border"> 
+  <div></div>
+            <!--<ion-range class="range" name="brightness" [(ngModel)]="l.level" (ionBlur)="changeLevel(l.id, l.level)">
+              <ion-icon range-left small name="sunny"></ion-icon>
+              <ion-icon range-right name="sunny"></ion-icon>
+            </ion-range>-->
+
+          </ion-col>
+        </ion-row>
+        <ion-icon item-right name="arrow-forward" class="arrow-icon"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+
+
+  <!--<ion-grid>-->
+  <!--<ion-row *ngFor="let l of lights" class="grid-list-item">
+    <ion-col col-auto class="border">
+      <ion-icon (click)="onBulbPress(l.id)" [name]="l.status == 'on' ? 'ios-bulb' : 'ios-bulb-outline'" class="bulb-icon border"></ion-icon>
+    </ion-col>
+    <ion-col col-5 class="border">
+      <ion-label class="bulb-label border">{{l.name}}</ion-label>
+      <div class="status">status:{{l.status}} level:{{l.level}}</div>
+    </ion-col>
+
+    <ion-col col-2 class="border">
+      <ion-range class="" [(ngModel)]="l.level" (ionBlur)="changeLevel(l.id, l.level)">
+        <ion-icon range-left small name="sunny"></ion-icon>
+        <ion-icon range-right name="sunny"></ion-icon>
+      </ion-range>
+    </ion-col>
+    <ion-col col-auto class="border">
+      <ion-icon (click)="onBulbPress(l.id)" name="arrow-forward" color="itemArrow" class="arrow-icon border"></ion-icon>
+    </ion-col>
+  </ion-row>-->
+
+</ion-content>
